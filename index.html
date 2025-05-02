@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista Amarilla - Innovando con Vos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="img/ico.ico">
+
+  
+  <link rel="stylesheet" href="estilos.css"/>
+
+</head>
+<body>
+
+  <header class="navbar">
+
+      <h1 class="logo">Lista Amarilla</h1>
+      <br>
+    
+    <nav class="navbar-links">
+      <a href="https://www.instagram.com/lista_verde.cen25" target="_blank" class="nav-icon instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://whatsapp.com/channel/0029Vb5x0wXKWEKkEsbpKO0h" target="_blank" class="nav-icon whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.tiktok.com/@.lista.verde?_t=ZM-8vs6ObFgZQk&_r=1" target="_blank" class="nav-icon tiktok">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+      <a href="mailto:tu_correo@electronico.com" class="nav-icon mail">
+        <i class="fas fa-envelope"></i> Contacto
+      </a>
+    </nav>
+  </header>
+  <section class="nosotros-section" style="padding: 60px 20px; background-color: #f8f8e9; text-align: center;">
+    <div class="seccion-encabezado animate__animated animate__fadeInUp" style="margin-bottom: 30px; cursor: pointer;" onclick="toggleCentroEstudiantes()">
+      <h2 style="font-size: 2.8rem; color: #d3c941; font-weight: bold;">¿Qué es un Centro de Estudiantes?</h2>
+      <p style="font-size: 1.2rem; color: #4e4e4e; max-width: 800px; margin: 0 auto;">
+        Hacé clic para conocer su importancia dentro del colegio 📚💬
+      </p>
+    </div>
+  
+    <div id="centroEstudiantesInfo" class="fila-integrantes" style="display: none; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
+      
+      <div class="integrante-card info-estatica">
+        <h5>📌 ¿Qué es?</h5>
+        <p class="descripcion">El Centro de Estudiantes es el grupo que representa a todos los alumnos de la escuela. Sirve para proponer, organizar y acompañar en actividades, mejoras y reclamos que hagan falta.</p>
+      </div>
+      <div class="integrante-card info-estatica">
+        <h5>🚀 ¿Por qué es importante?</h5>
+        <p class="descripcion">Es importante porque nos permite opinar, ser escuchados y formar parte de las decisiones que influyen en nuestra vida escolar. Es una forma de estar más unidos, más organizados y más activos como estudiantes.</p>
+      </div>
+      <div class="integrante-card info-estatica">
+        <h5>🙋 ¿Quiénes lo integran?</h5>
+        <p class="descripcion">Está compuesto por representantes elegidos por los propios alumnos. Pero todos pueden sumar ideas, ayudar en actividades o ser parte del equipo.</p>
+      </div>
+  
+  
+  
+    </div>
+  </section>
+    
+    
+  
+<section class="nosotros-section" style="padding: 40px 20px; background-color: #f8f8e9; text-align: center;">
+  <div class="seccion-encabezado pulse-hover" onclick="toggleCandidatos()">
+    <h2>📣 ¿Quiénes somos?</h2>
+    <p>Somos estudiantes comprometidos. <br>
+      Queremos que el Centro de Estudiantes vuelva a tener protagonismo y sea una herramienta real para todos: para los que quieren proponer, para los que necesitan apoyo y para los que simplemente quieren disfrutar más su paso por la escuela.</p><br>
+    <p>Conocé a cada uno de los candidatos que representan la Lista Verde.<br>📲 ¡Tocá acá para saber más!</p>
+  </div>
+  
+  <div class="candidatos-contenedor" style="display: none; flex-direction: column; align-items: center; gap: 30px;">
+  
+    <div class="fila-integrantes">
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Julián Seárez</h1>
+        <p>Presidente</p>
+        <div class="bio">
+          <p>Queremos una escuela donde participar sea fácil, donde se escuche a todos y donde el Centro de Estudiantes esté siempre presente.</p>
+          <a href="https://www.instagram.com/juliansearez_/?utm_source=ig_web_button_share_sheet" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+  
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Elías Masud Mayol</h1>
+        <p>Vicepresidente</p>
+        <div class="bio">
+          <p>Nos mueve la idea de una escuela más activa, con propuestas reales y con un equipo que te acompañe.</p>
+          <a href="https://www.instagram.com/eliasmm07/?utm_source=ig_web_button_share_sheet" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila-integrantes">
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1> Melani Yapur</h1>
+        <p>Secretaria</p>
+        <div class="bio">
+          <p>La organización también es compromiso. Queremos un Centro que funcione, no solo que prometa.</p>
+          <a href="https://www.instagram.com/melani_yapura465/?utm_source=ig_web_button_share_sheet" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+  
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Pilar Rodríguez</h1>
+        <p>Tesorera</p>
+        <div class="bio">
+          <p>Queremos que cada propuesta tenga respaldo, que se pueda hacer, y que se vea el trabajo.</p>
+          <a href="https://www.instagram.com/ppilarrzg?igsh=MWN0djgzbTRycjJwZQ%3D%3D" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila-integrantes">
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Nuestros vocales</h1>
+        <ul style="text-align: start;">
+          <li>2° 2da: Mía Franzini</li>
+          <li>2° 4ta: Nayla Cerezo – Ramiro Rivadera</li>
+          <li>3° 3ra: Delfina Carrizo – Victoria Carrizo – Mateo Tapia</li>
+          <li>4° 1ra: Ramiro Páez</li>
+          <li>4° 2da: Bautista Azulay</li>
+
+        </ul>
+       
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+</section>
+
+<section class="nosotros-section" style="padding: 40px 20px; background-color: #f8f8e9; text-align: center;">
+  <div class="seccion-encabezado animate__animated animate__fadeInDown" style="margin-bottom: 30px; cursor: pointer;" onclick="togglePropuestas()">
+    <h2 style="font-size: 2.5rem; color: #d3c941; font-weight: bold; margin-bottom: 10px;">
+      Nuestras Propuestas 💡
+    </h2>
+    <p>Todas nuestras propuestas son viables y pueden realizarse con la autorización de dirección. No proponemos cosas imposibles: proponemos cosas que se pueden hacer y que realmente sirven.</p><br>
+    <p style="font-size: 1.1rem; color: #4e4e4e; max-width: 600px; margin: 0 auto;">
+      Tocá para descubrir las ideas que tenemos para mejorar juntos nuestra Institución.
+    </p>
+  </div>
+  <div class="propuestas-contenedor" style="display: none; flex-direction: column; align-items: center; gap: 30px;">
+    <div class="fila-integrantes">
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>✏️ Educación y acompañamiento</h5>
+    <div class="bio">
+      <ul>
+        <li>Clases de apoyo entre estudiantes.</li>
+        <li>Talleres de orientación vocacional y emocional.</li>
+        <li>Encuentros con egresados para charlar sobre salidas laborales o facultad.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>🙋‍♂️ Participación y comunicación</h5>
+    <div class="bio">
+      <ul>
+        <li>Noticiero semanal con información útil, posteos en redes y novedades.</li>
+        <li>Buzón de ideas anónimo.</li>
+        <li>Encuestas y votaciones abiertas a todos.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="fila-integrantes">
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>♟️ Actividades y bienestar</h5>
+    <div class="bio">
+    <ul>
+      <li>Competencia de “Tribus” en la Semana del Estudiante.</li>
+      <li>Torneos de fútbol, truco, ajedrez, videojuegos, etc.</li>
+      <li>Espacios de descanso, lectura o arte (cuando se pueda).</li>
+    </ul>
+    </div>
+  </div>
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>💛 Comunidad y solidaridad</h5>
+    <div class="bio">
+      <ul>
+        <li>Campañas solidarias con jardines, escuelas o clubes.</li>
+        <li>Mural colectivo con frases positivas.</li>
+        <li>Actividades que integren a todos los cursos.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+  
+</section>
+<section class="nosotros-section" style="padding: 40px 20px; background-color: #f8f8e9; text-align: center;">
+  <div class="seccion-encabezado animate__animated animate__fadeInDown" style="margin-bottom: 30px; cursor: pointer;" onclick="togglePorQueElegirnos()">
+    <h2 style="font-size: 2.5rem; color: #d3c941; font-weight: bold; margin-bottom: 10px;">
+      ¿Por qué elegirnos? 🌟
+    </h2>
+    <p style="font-size: 1.1rem; color: #4e4e4e; max-width: 600px; margin: 0 auto;">
+      Tocá para ver por qué creemos que somos la mejor opción para representarte.
+    </p>
+  </div>
+
+  <div class="propuestas-contenedor" id="elegirnos-contenedor" style="display: none;">
+    <div class="fila-integrantes">
+      <div class="integrante-card">
+        <h5>✍️ Porque no venimos a prometer humo.</h5>
+        <div class="bio">
+          <p>Venimos con ideas claras, reales y con un equipo de gente copada, de confianza y que te representa de verdad.</p>
+        </div>
+      </div>
+
+      <div class="integrante-card">
+        <h5>💛 Porque la Lista Amarilla no es solo un nombre</h5>
+        <div class="bio">
+          <p>Es un grupo de chicos como vos, que quieren dejar la escuela mejor de lo que la encontraron.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fila-integrantes">
+      <div class="integrante-card">
+        <h5>🙋 Porque estamos cerca tuyo</h5>
+        <div class="bio">
+          <p>Y lo que prometemos, lo podemos cumplir.</p>
+        </div>
+      </div>
+
+      <div class="integrante-card">
+        <h5>🎯 Eleginos</h5>
+        <div class="bio">
+          <p>Si querés que el Centro de Estudiantes vuelva a ser de todos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+
+  <div class="footer-content">
+    <p>Hecho con <span class="heart">💛</span> por <strong>Lista Amarilla</strong></p>
+   
+    <div class="footer-redes">
+      <a href="https://www.instagram.com/lista.amarilla_epet1?igsh=MTZicDZ3NnQza2hhbw%3D%3D" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a><br>
+      </a>
+      <a href="mailto:tu_correo@electronico.com" title="Contacto por mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p class="escuela">E.P.E.T. N°1 "Gral. Ángel Vicente Peñaloza"</p>
+  </div>
+  <br>
+  <div class="footer-logos">
+    <img src="img/icoes.jpg" alt="Logo Escuela" class="logo-footer"><br>
+    <img src="img/ico.la.jpg" alt="Logo Lista" class="logo-footer">
+
+  </div>
+</footer>
+
+<script>
+  function toggleCandidatos() {
+    const contenedor = document.querySelector('.candidatos-contenedor');
+    const visible = contenedor.style.display === 'flex';
+    contenedor.style.display = visible ? 'none' : 'flex';
+  }
+
+  function togglePropuestas() {
+    const contenedor = document.querySelector('.propuestas-contenedor');
+    const visible = contenedor.style.display === 'flex';
+    contenedor.style.display = visible ? 'none' : 'flex';
+  }
+
+  //boton para controlar bio.> nota! indexar bien el estilo con el js 
+  function mostrarPropuesta(card) {
+    const bio = card.querySelector('.bio');
+    if (bio) {
+      bio.style.display = 'block';
+    }
+  }
+
+  function cerrarPropuesta(button) {
+    const bio = button.closest('.integrante-card').querySelector('.bio');
+    if (bio) {
+      bio.style.display = 'none';
+    }
+  }
+
+  function toggleCandidatos() {
+    const contenedor = document.querySelector('.candidatos-contenedor');
+    if (contenedor.style.display === 'none' || contenedor.style.display === '') {
+      contenedor.style.display = 'flex';
+    } else {
+      contenedor.style.display = 'none';
+    }
+  }
+
+  // Opcional: ocultar todas las bios al inicio
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.bio').forEach(bio => {
+      bio.style.display = 'none';
+    });
+  });
+  function toggleCandidatos() {
+  const contenedor = document.querySelector('.candidatos-contenedor');
+  const bios = contenedor.querySelectorAll('.bio');
+
+  const yaVisible = contenedor.style.display === 'flex';
+
+  contenedor.style.display = yaVisible ? 'none' : 'flex';
+
+  // Mostrar u ocultar las bios también
+  bios.forEach(bio => {
+    bio.style.display = yaVisible ? 'none' : 'block';
+  });
+}
+function togglePropuestas() {
+  const contenedor = document.querySelector('.propuestas-contenedor');
+  const bios = contenedor.querySelectorAll('.bio');
+
+  const yaVisible = contenedor.style.display === 'flex';
+
+  // Mostrar u ocultar contenedor
+  contenedor.style.display = yaVisible ? 'none' : 'flex';
+
+  // Mostrar u ocultar bios automáticamente ver donde -
+  bios.forEach(bio => {
+    bio.style.display = yaVisible ? 'none' : 'block';
+  });
+}
+
+function toggleCentroEstudiantes() {
+  const contenedor = document.getElementById("centroEstudiantesInfo");
+  if (contenedor.style.display === "none" || contenedor.style.display === "") {
+    contenedor.style.display = "flex";
+  } else {
+    contenedor.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
