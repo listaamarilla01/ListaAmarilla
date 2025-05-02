@@ -220,32 +220,28 @@
     <div class="fila-integrantes">
       <div class="integrante-card">
         <h5>✍️ Porque no venimos a prometer humo.</h5>
-        <div class="bio">
-          <p>Venimos con ideas claras, reales y con un equipo de gente copada, de confianza y que te representa de verdad.</p>
-        </div>
+          <p>Venimos con ideas claras, reales y con un equipo de gente copada, de confianza y que te representa de verdad.</p><br>
+    
       </div>
 
       <div class="integrante-card">
         <h5>💛 Porque la Lista Amarilla no es solo un nombre</h5>
-        <div class="bio">
-          <p>Es un grupo de chicos como vos, que quieren dejar la escuela mejor de lo que la encontraron.</p>
-        </div>
+          <p>Es un grupo de chicos como vos, que quieren dejar la escuela mejor de lo que la encontraron.</p><br>
+        
       </div>
     </div>
 
     <div class="fila-integrantes">
       <div class="integrante-card">
         <h5>🙋 Porque estamos cerca tuyo</h5>
-        <div class="bio">
-          <p>Y lo que prometemos, lo podemos cumplir.</p>
-        </div>
+          <p>Y lo que prometemos, lo podemos cumplir.</p><br>
+     
       </div>
 
       <div class="integrante-card">
         <h5>🎯 Eleginos</h5>
-        <div class="bio">
           <p>Si querés que el Centro de Estudiantes vuelva a ser de todos.</p>
-        </div>
+       
       </div>
     </div>
   </div>
@@ -354,7 +350,11 @@ function toggleCentroEstudiantes() {
     contenedor.style.display = "none";
   }
 }
-
+function togglePorQueElegirnos() {
+  const contenedor = document.getElementById("elegirnos-contenedor");
+  const visible = contenedor.style.display === 'flex';
+  contenedor.style.display = visible ? 'none' : 'flex';
+}
 </script>
 
 </body>
