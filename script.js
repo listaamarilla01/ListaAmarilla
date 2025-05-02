@@ -16,9 +16,4 @@ function cerrarPropuesta(btn) {
   card.classList.remove('activa');
   card.querySelector('.bio').style.display = 'none';
 }
-function togglePorQueElegirnos() {
-  const contenedor = document.getElementById("elegirnos-contenedor");
-  const visible = contenedor.style.display === 'flex';
-  contenedor.style.display = visible ? 'none' : 'flex';
-}
 
