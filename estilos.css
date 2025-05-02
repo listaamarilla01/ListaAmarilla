@@ -145,7 +145,7 @@ body {
 }
 .footer {
   background-color: #fffc37;
-  color: white;
+  color:  rgb(0, 0, 0);
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
@@ -170,7 +170,7 @@ body {
 }
 
 .footer-redes a {
-  color: white;
+  color:  rgb(0, 0, 0);
   font-size: 1.4rem;
   transition: transform 0.3s, color 0.3s;
   animation: flotando 3s infinite;
